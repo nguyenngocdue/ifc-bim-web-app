@@ -5,6 +5,8 @@ import Footer from "./components/app/Footer";
 import SignIn from "./pages/SignIn";
 import Home from "./pages/Home";
 import SignUp from "./pages/SignUp";
+import HomeViewer from "./pages/BimViewers/HomeViewer";
+import Viewer3D from "./pages/BimViewers/Viewer3D";
 
 // Layout chung với Header và Footer
 const DefaultLayout: React.FC<{ children: React.ReactNode }> = ({ children }) => {
@@ -39,6 +41,9 @@ const App: React.FC = () => {
             </DefaultLayout>
           }
         />
+
+        <Route path="/viewer" element={<HomeViewer />} />
+        <Route path="/viewer3d" element={<Viewer3D />} />
 
         {/* Các trang không có Header và Footer */}
         <Route
