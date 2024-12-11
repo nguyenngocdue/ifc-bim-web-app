@@ -63,8 +63,8 @@ const Viewer: React.FC = () => {
         <div
             ref={containerRef}
             style={{
-                width: "100vw",
-                height: "100vh",
+                width: "100%",
+                height: "75vh",
                 position: "relative",
             }}
         />
