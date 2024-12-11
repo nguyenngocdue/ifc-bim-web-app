@@ -1,6 +1,7 @@
-import CustomSidebar from "@/components/app/CustomSidebar ";
+import { CustomSidebar } from "@/components/app/CustomSidebar";
 import Header2 from "@/components/app/Header2";
 import View3DTool from "@/components/app/View3DTool";
+import Viewer from "@/components/app/Viewer";
 
 const Viewer3D = () => {
   
@@ -15,6 +16,7 @@ const Viewer3D = () => {
                 {/* Main 3D Viewer */}
                 <section className="flex-1 p-4 flex justify-center items-center bg-gray-50">
                     <div className="w-[1200px] h-[700px] bg-gray-200 rounded-lg shadow-md overflow-hidden relative border border-gray-300">
+                        <Viewer/>
                     </div>
                 </section>
             </main>
