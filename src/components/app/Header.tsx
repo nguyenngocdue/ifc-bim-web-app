@@ -1,4 +1,3 @@
-import React, { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
@@ -6,7 +5,7 @@ import { DropdownMenu, DropdownMenuContent, DropdownMenuItem, DropdownMenuTrigge
 
 function Header() {
   return (
-    <div className="bg-gray-900 text-white px-6 py-3 flex items-center justify-between">
+    <div className="bg-gray-900 text-white px-6 py-3 flex items-center justify-between fixed top-0 left-0 right-0 z-50">
       {/* Logo Section */}
       <div className="flex items-center">
         <div className="w-10 h-10 bg-lime-500 rounded-full flex justify-center items-center">

@@ -41,7 +41,7 @@ const Viewer: React.FC = () => {
             // Function to load and display IFC
             const loadIfc = async () => {
                 const file = await fetch(
-                    "https://thatopen.github.io/engine_components/resources/small.frag",
+                    // "https://thatopen.github.io/engine_components/resources/small.frag",
                 );
                 const dataBlob = await file.arrayBuffer();
                 const buffer = new Uint8Array(dataBlob);
@@ -62,11 +62,7 @@ const Viewer: React.FC = () => {
     return (
         <div
             ref={containerRef}
-            style={{
-                width: "100%",
-                height: "75vh",
-                position: "relative",
-            }}
+            className="w-full h-full"
         />
     );
 };
