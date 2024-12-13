@@ -14,6 +14,7 @@ import {
 } from "@/components/ui/sidebar"
 import { AppSidebar } from "./AppSidebar"
 import Viewer from "../Viewer"
+import View3DTool from "../View3DTool"
 
 export default function CustomSidebar({ children }: { children: React.ReactNode }) {
   return (
@@ -39,9 +40,9 @@ export default function CustomSidebar({ children }: { children: React.ReactNode 
             </BreadcrumbList>
           </Breadcrumb>
         </header>
-          <div className="h-[80%] p-4">
+          <div className="h-[74%] p-4">
                 <Viewer/>
-          <div className="min-h-[100vh] flex-1 rounded-xl bg-muted/50 md:min-h-min" />
+              <View3DTool/>
         </div>
       </SidebarInset>
     </SidebarProvider>
