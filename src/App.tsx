@@ -7,6 +7,7 @@ import Home from "./pages/Home";
 import SignUp from "./pages/SignUp";
 import HomeViewer from "./pages/BimViewers/HomeViewer";
 import Viewer3D from "./pages/BimViewers/Viewer3D";
+import WebglClipping from "./pages/BimViewers/WebglClipping";
 
 // Layout chung với Header và Footer
 const DefaultLayout: React.FC<{ children: React.ReactNode }> = ({ children }) => {
@@ -44,6 +45,7 @@ const App: React.FC = () => {
 
         <Route path="/viewer" element={<HomeViewer />} />
         <Route path="/viewer3d" element={<Viewer3D />} />
+        <Route path="/webgl_clipping" element={<WebglClipping />} />
 
         {/* Các trang không có Header và Footer */}
         <Route
