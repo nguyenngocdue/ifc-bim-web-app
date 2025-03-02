@@ -1,5 +1,8 @@
+// src/App.tsx
 import React from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { routes } from "./router/routesConfig";
+import RenderLayout from "./router/RenderLayout";
 import Header from "./components/app/Header";
 import Footer from "./components/app/Footer";
 import SignIn from "./pages/SignIn";
